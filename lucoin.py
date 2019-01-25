@@ -70,7 +70,7 @@ class Blockchain:
     
     # pillar 1: being able to add transactions
     def add_transaction(self, sender, receiver, amount):
-        self.transaction.append({'sender': sender,
+        self.transactions.append({'sender': sender,
                                  'receiver': receiver,
                                  'amount': amount})
         prev_block = self.get_prev_block()
